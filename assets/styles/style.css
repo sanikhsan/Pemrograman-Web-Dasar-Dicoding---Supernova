@@ -1,0 +1,261 @@
+
+/* =========== Navbar Mulai =========== */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+header{
+	display: inline;
+}
+
+.navbar{
+	clear: both;
+	overflow: auto;
+	background-color: #141414;
+	padding: 10px 20px 10px 20px;
+	font-family: 'Balsamiq Sans';
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.navbar a:hover{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+nav{
+	float: right;
+}
+
+.logo{
+	float: left;
+	max-width: 50%
+	height: auto;
+}
+
+nav li{
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 25px;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+/* =========== Navbar Selesai =========== */
+
+
+/* =========== Konten Mulai =========== */
+main{
+	margin: 0;
+	overflow: auto;
+}
+
+body{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #d9d9d9;
+}
+
+h1{
+	padding-bottom: 10px;
+	font-family: 'Balsamiq Sans';
+}
+
+aside{
+	float: right;
+	width: 25%;
+}
+
+footer {
+   padding: 10px 10px 10px 20px;
+   left: 0;
+   bottom: 0;
+   color: white;
+   background-color: black;
+   text-align: left;
+   font-weight: bold;
+}
+
+/* =========== Slideshow Mulai =========== */
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin: 0 50px 0 50px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slideshow{
+	position: relative;
+	clear: both;
+}
+
+.slide{
+	display: none;
+	padding: 10px 50px 30px 50px;
+
+}
+
+.posisi{
+	width: 100%;
+	max-height: 500px;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+/* =========== Slideshow Selesai =========== */
+.kolom{
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+
+.baris:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.deko{
+	text-shadow: 00 0 3px #FF0000, 0 0 5px #000000;
+	border-radius: 15px;
+	color: white;
+	text-align: center;
+	padding: 50px;
+	box-shadow: 0 0 2px 2px rgba(255,255,255,0.5);
+	margin: 20px 20px 0 20px;
+}
+
+.land{
+	height: 100%;
+	font-size: 24px;
+	padding: 10px 50px 250px 50px;
+	width: 100%;
+	background-image: url(http://www.agsongspublishing.com/wp-content/uploads/2017/03/Studio-Landing-Page.jpg);
+	background-repeat: no-repeat;
+	position: center;
+	background-size: cover;
+}
+
+.profile{
+	font-size: 18px;
+	padding: 10px 50px 30px 50px;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 5px;
+	margin: 20px 20px 0 20px;
+}
+
+.sidebar{
+	font-size: 14px;
+	text-align: left;
+	padding: 10px 50px 30px 50px;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	background-color: white;
+	margin: 20px;
+}
+
+.card{
+	box-shadow: 0px 0 2px 2px rgba(0,0,0,0.4);
+	border-radius: 5px;
+	padding: 10px;
+	margin: 20px 0 20px 20px;
+	background-color: white;
+	z-index: 10;
+}
+
+hr{
+	border-color: rgba(255,69,0,0.6);
+}
+
+#content {
+   float: left;
+   width: 75%;
+   padding-right: 20px;
+}
+
+/* =========== Konten Selesai =========== */
+
+
+/* =========== Screen Mulai =========== */
+
+@media screen and (max-width: 1000px) {
+   #profile,
+   #content,
+   aside {
+       width: 100%;
+   }
+}
+
+@media screen and (max-width: 690px) {
+	#profile,
+	.deko{
+		padding: 0;
+		box-shadow: 0 0 0 0 rgba(0,0,0,0);
+	}
+
+	.logo{
+		display: none;
+	}
+
+	.navbar{
+		padding: 10px;
+	}
+
+	nav{
+		float: left;
+		margin: 0;
+		font-size: 12px;
+	}
+}
+/* =========== Screen Selesai =========== */
